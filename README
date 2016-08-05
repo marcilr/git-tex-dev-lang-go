@@ -60,7 +60,7 @@ make.bat
   Build LaTeX document using Cygwin 
 
 Makefile
-  Standard GNU makefile to build LaTeX document.
+  Standard GNU makefile to build LaTeX document
 
 
 Macros from $(HOME)/texmf/tex/latex$/ - Pulled in by LaTeX
