@@ -62,6 +62,9 @@ make.bat
 Makefile
   Standard GNU makefile to build LaTeX document
 
+TODO
+  Items for Go - Everything You Wanted to Know About Go and Didn't Know to Ask
+
 
 Macros from $(HOME)/texmf/tex/latex$/ - Pulled in by LaTeX
 ----------------------------------------------------------
