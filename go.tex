@@ -398,7 +398,7 @@ API then.\\
 \\
 Use \texttt{mysql} as driverName and a valid
 \href{https://github.com/Go-SQL-Driver/MySQL/\#dsn-data-source-name}{DSN}
-as dataSourceName:
+as \texttt{dataSourcename}:
 
 \begin{verbatim}
 import "database/sql"
@@ -406,6 +406,32 @@ import _ "github.com/go-sql-driver/mysql"
 
 db, err := sql.Open("mysql", "user:password@/dbname")
 \end{verbatim}
+
+% =================== DSN (Data Source Name) ===============
+% =================== DSN (Data Source Name) ===============
+\subsection{DSN (Data Source Name)}
+The Data Source Name has a common format,... (optional
+parts marked by squared\\
+brackets):\footnote{DSN (Data Source Name),\\
+  \href{https://github.com/Go-SQL-Driver/MySQL/\#dsn-data-source-name}{https://github.com/Go-SQL-Driver/MySQL/\#dsn-data-source-name}}\\
+\\
+\indent $[username[:password]@][protocol[(address)]]/dbname[?param1=$\\
+\indent \indent $value1$\&$...$\&$paramN=valueN]$\\
+\\
+A DSN in its fullest form:\\
+\indent $username:password@protocol(address)/dbname?param=value$\\
+\\
+Except for the databasename, all values are optional. So the minimal DSN is:\\
+\indent $/dbname$\\
+\\
+If you do not want to preselect a database, leave dbname empty:\\
+\indent $/$\\
+\\
+This has the same effect as an empty DSN string:\\
+\\
+\\
+Alternatively, \href{https://godoc.org/github.com/go-sql-driver/mysql\#Config.FormatDSN}{Config.FormatDSN} can be used to create a DSN string by filling a struct.
+
 
 
 %% ======================= Comments =======================
