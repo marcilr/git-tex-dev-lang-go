@@ -370,41 +370,27 @@ failure.''\footnote{What's the recommended way to connect to MySQL from Go?\\
 %% ======================= Comments =======================
 \newpage
 \section{Comments}
-\begin{center}
-\framebox{
-\begin{minipage}[t]{0.9\textwidth}
-\cmd{COMMENTS} Comment --- \emph{Sean Weems, Spring 2003}\\
-We should get the \cmd{COMMENTS} column searchable via the 
-landrecords application before we do much anything else -- shouldn't
-be too hard.
-\end{minipage}
-}
-\end{center}
+``Comments serve as program documentation. There are two
+forms:
 
-\begin{center}
-\framebox{
-\begin{minipage}[t]{0.9\textwidth}
-\emph{Errata: Plats spanning multiple sections}\\
-A few anomalies can be observed in the \cmd{AKPLATS}
-table. Specifically plats exist that span multiple sections. 
-Since the table only has a single column, \cmd{SCODE}, 
-that accepts a single section code, SGU (Status
-Graphics Unit) has handled this problem by entering multiple 
-rows in the table, each with a different section that point to
-the same plat or file. Multiple section plats are indicated by  setting 
-the \cmd{TCODE} column to the value \cmd{37}, and making an 
-appropriate notation like \emph{Section 24-25-26-27} in the 
-\cmd{REMARKS} column.\\
-\FIXME{Perhaps the \cmd{SCODE} column should accept an array of sections?}
+\begin{enumerate}
+    \item Line comments start with the character sequence
+      \texttt{//} and stop at the end of the line.
+    \item General comments start with the character sequence
+        \texttt{/*} and stop with the first subsequent
+        character sequence \texttt{*/}.
+\end{enumerate}
 
-\end{minipage}
-}
-\end{center}
+\noindent A comment cannot start inside a rune or string literal, or
+inside a comment. A general comment containing no newlines
+acts like a space. Any other comment acts like a newline.''\footnote{Comments,
+Lexical elements, The Go Programming Language Specification,
+Version of January 5, 2016,
+\href{https://golang.org/ref/spec\#Comments}{https://golang.org/ref/spec\#Comments}}
 
-
+  
 %% ======================== Examples =============================
 %% ======================== Examples =============================
-\newpage
 \section{Examples}
 
 
@@ -417,10 +403,11 @@ appropriate notation like \emph{Section 24-25-26-27} in the
 %%
 %% Adding unnumbered sections to TOC
 %% http://tex.stackexchange.com/questions/11668/adding-unnumbered-sections-to-toc
-%% 
+%%
 %% \section*{Appendix}
 %% Need content here.
 %%
+\newpage
 \setcounter{secnumdepth}{0}
 \section{Appendix}
 
