@@ -381,7 +381,7 @@ package''\footnote{Go-MySQL-Driver, \href{https://github.com/Go-SQL-Driver/MySQL
 Simple install the package to your
 \texttt{\href{http://code.google.com/p/go-wiki/wiki/GOPATH}{\$GOPATH}}
 with the \href{http://golang.org/cmd/go/}{go tool} from
-shell:\footnote{Go-MySQL-Driver, \href{https://github.com/Go-SQL-Driver/MySQL/}{https://github.com/Go-SQL-Driver/MySQL/}}\\
+shell:\footnote{Ibid.}\\
 \\
 \texttt{\$ go get github.com/go-sql-driver/mysql}\\
 \\
@@ -390,7 +390,22 @@ system's PATH.''
 
 %% =========================== Usage ===========================
 \subsubsection{Usage}
-\FIXME{Need data here}
+Go MySQL Driver is an implementation of Go's
+\texttt{database/sql/driver} interface.  You only need to
+import the driver and can use the full
+\href{http://golang.org/pkg/database/sql}{database/sql}
+API then.\\
+\\
+Use \texttt{mysql} as driverName and a valid
+\href{https://github.com/Go-SQL-Driver/MySQL/\#dsn-data-source-name}{DSN}
+as dataSourceName:
+
+\begin{verbatim}
+import "database/sql"
+import _ "github.com/go-sql-driver/mysql"
+
+db, err := sql.Open("mysql", "user:password@/dbname")
+\end{verbatim}
 
 
 %% ======================= Comments =======================
