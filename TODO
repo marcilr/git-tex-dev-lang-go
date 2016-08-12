@@ -1,3 +1,9 @@
 TODO
 Created Fri Aug  5 15:27:13 AKDT 2016
 Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+
++++ Fri Aug 12 10:07:37 AKDT 2016 - Add Control Structures section with:
+Control structures - Go for loop, break, continue, range
+http://golangtutorials.blogspot.com/2011/06/control-structures-go-for-loop-break.html
