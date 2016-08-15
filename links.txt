@@ -8,4 +8,12 @@ Go related links
 
 Links
 =====
+An Introduction to Programming in Go
+by Caleb Doxsey
+https://www.golang-book.com/books/intro
+
+The Core Packages
+An Introduction to Programming in Go 
+Go Resources 
+https://www.golang-book.com/books/intro/13
 
