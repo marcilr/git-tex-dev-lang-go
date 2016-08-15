@@ -10,7 +10,10 @@ Links
 =====
 An Introduction to Programming in Go
 by Caleb Doxsey
-https://www.golang-book.com/books/intro
+https://www.golang-book.com/books/intr
+
+Go Resources
+https://www.golang-book.com/
 
 The Core Packages
 An Introduction to Programming in Go 
