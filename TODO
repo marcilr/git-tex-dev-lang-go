@@ -3,6 +3,11 @@ Created Fri Aug  5 15:27:13 AKDT 2016
 Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
 
 
++++ Mon Aug 15 15:51:56 AKDT 2016 - Pick off sections from:
+  The Core Packages
+  An Introduction to Programming in Go 
+  Go Resources 
+  https://www.golang-book.com/books/intro/13
 
 +++ Fri Aug 12 10:07:37 AKDT 2016 - Add Control Structures section with:
 Control structures - Go for loop, break, continue, range
